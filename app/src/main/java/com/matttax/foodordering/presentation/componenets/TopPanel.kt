@@ -28,7 +28,9 @@ fun TopPanel() {
 		horizontalArrangement = Arrangement.SpaceBetween
 	) {
 		Row(
-			modifier = Modifier.clickable {  }
+			modifier = Modifier
+				.padding(horizontal = 15.dp)
+				.clickable {  }
 		) {
 			Text("Moscow")
 			Icon(
@@ -37,7 +39,9 @@ fun TopPanel() {
 			)
 		}
 		Icon(
-			modifier = Modifier.clickable {  },
+			modifier = Modifier
+				.padding(horizontal = 15.dp)
+				.clickable {  },
 			painter = painterResource(id = R.drawable.ic_qr_code),
 			contentDescription = null
 		)
